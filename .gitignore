@@ -1,0 +1,11 @@
+# 환경 설정 및 민감 정보 파일
+app1_private.env
+Assistant1_private.env
+
+# 개발 중 생성되는 체크포인트 파일
+app-checkpoint.py
+Assistant-checkpoint.py
+
+# 주요 코드 파일 (필요시 무시)
+app.py
+Assistant.py

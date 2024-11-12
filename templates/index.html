@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Interview</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="static/image1.png" alt="Logo" class="logo">
+        </header>
+        <main>
+            <h1>보이스피싱이 의심되시나요?</h1>
+            <div class="button-container">
+                <button id="text-button">Text Input</button>
+                <button id="voice-button">Voice Input</button>
+            </div>
+            <div id="text-input-div" class="input-div" style="display: none;">
+                <input type="text" id="user-text-input" placeholder="Enter text">
+                <button onclick="sendTextInput()">Submit</button>
+            </div>
+            <div id="voice-input-div" class="input-div" style="display: none;">
+                <p>Listening...</p>
+                <button onclick="stopVoiceRecording()">Stop Recording</button>
+            </div>
+            <div class="chat-container" id="chat-container"></div>
+        </main>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
